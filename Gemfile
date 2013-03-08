@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'monk'
-gem 'monk-glue', "git: git://github.com/monkrb/glue.git"
+gem 'monk-glue', git: "git://github.com/monkrb/glue.git"
 gem 'rake', '~> 0.9.2.2'
 gem 'sinatra', '~> 1.4', git: "git://github.com/sinatra/sinatra.git", require: "sinatra/base"
 gem 'sprockets', '~> 2.6.0', require: "sprockets"
@@ -12,12 +12,12 @@ gem 'haml', '~> 3.1.7'
 # gem 'pony', '~> 1.4'
 gem 'data_mapper'
 gem 'dm-serializer'
-gem 'dm-migrations', git: "http://github.com/datamapper/dm-migrations.git"
+gem 'dm-migrations'
 gem 'dm-timestamps'
 gem 'dm-mysql-adapter'
 gem 'sinatra-partial', require: 'sinatra/partial'
 gem 'thin', '>= 1.5.0'
-gem 'json', git: "git://github.com/genki/json.git"
+gem 'json'
 
 group :development do
   gem 'thor', git: "git://github.com/wycats/thor.git"
