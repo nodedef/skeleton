@@ -28,4 +28,5 @@ end
 group :test do
   gem 'stories', git: "git://github.com/citrusbyte/stories.git"
   gem 'webrat', git: "git://github.com/brynary/webrat.git"
+  gem 'override'
 end
