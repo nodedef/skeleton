@@ -1,19 +1,22 @@
 defaults: &defaults
   :log_level: warn
-  :redis:
+  :mysql:
     :host: localhost
-    :port: 6380
+    :user: root
+    :password: root 
 
 :development:
+  :mysql: 
+    :database: development
   <<: *defaults
   :log_level: debug
 
 :test:
+  :mysql:
+    :database: test
   <<: *defaults
-  :redis:
-    :host: localhost
-    :port: 6379
-    :db: 15
 
 :production:
+  :mysql:
+    :database: production
   <<: *defaults
